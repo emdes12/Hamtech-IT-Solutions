@@ -209,7 +209,7 @@ nav,
 
 .img-stamp-2 {
   position: absolute;
-  z-index: -2;
+  width: 80px;
   right: var(--body-padding);
   top: calc(var(--body-padding) / 2);
   opacity: 49%;

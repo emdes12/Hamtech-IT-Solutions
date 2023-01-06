@@ -83,3 +83,17 @@ function closeAllSelect(elmnt) {
 /* If the user clicks anywhere outside the select box,
 then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
+
+// collaspe services
+// const collaspeBody = document.getElements("show");
+const collaspeHead = document.getElementsByClassName("service-heading");
+collaspeHead[1].parentElement.classList.toggle("show");
+for (i = 0; i < collaspeHead.length; i++) {
+  collaspeHead[i].addEventListener("click", collaspeFunc);
+}
+
+function collaspeFunc() {
+  // this.parentNode.classList.toggle("show");
+  console.log("clicked");
+  this.parentElement.classList.toggle("show");
+}
