@@ -174,7 +174,7 @@ nav,
   left: -210px;
   bottom: 0;
   overflow: hidden;
-  transition: left 3s;
+  transition: left 1.5s;
 }
 
 .nav-link-mobile {
