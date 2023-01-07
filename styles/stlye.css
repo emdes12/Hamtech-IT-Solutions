@@ -603,7 +603,8 @@ footer {
 }
 
 .company-profile p {
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   font-size: var(--fs-small);
   font-weight: 200;
   padding-top: 30px;
