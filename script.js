@@ -87,7 +87,7 @@ document.addEventListener("click", closeAllSelect);
 // collaspe services
 // const collaspeBody = document.getElements("show");
 const collaspeHead = document.getElementsByClassName("service-heading");
-collaspeHead[1].parentElement.classList.toggle("show");
+
 for (i = 0; i < collaspeHead.length; i++) {
   collaspeHead[i].addEventListener("click", collaspeFunc);
 }

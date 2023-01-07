@@ -225,6 +225,16 @@ nav,
   .mobile-menu-icon {
     display: block;
   }
+
+  .logo img {
+    width: 35px;
+  }
+
+  .logo h3,
+  .logo h3 span {
+    font-size: 12px;
+    font-weight: 800;
+  }
 }
 
 /* header end */
@@ -307,7 +317,8 @@ nav,
 .section p {
   margin: 50px 0;
   font-size: var(--fs-small);
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   line-height: 30px;
   font-weight: 300;
 }
@@ -626,11 +637,16 @@ footer {
   padding: 5px 0 0;
 }
 
-@media (max-width: 900px) {
-}
-
 @media (max-width: 650px) {
   body {
     --body-padding: 20px;
+  }
+
+  .dspfl {
+    flex-direction: column-reverse;
+  }
+
+  .bg-image form {
+    grid-template-columns: 1fr;
   }
 }
