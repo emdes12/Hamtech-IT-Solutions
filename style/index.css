@@ -86,6 +86,7 @@ header {
 
 .mobile-menu {
   position: absolute;
+  display: none;
   top: 68px;
   transform: translateX(100%);
   overflow: hidden;
@@ -137,6 +138,10 @@ header {
   }
 
   .mobile-menu-icon {
+    display: block;
+  }
+
+  .mobile-menu {
     display: block;
   }
 }
