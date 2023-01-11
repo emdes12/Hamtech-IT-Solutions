@@ -7,7 +7,7 @@
 
 body {
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 a {
@@ -90,6 +90,7 @@ header {
   top: 68px;
   transform: translateX(100%);
   overflow: hidden;
+  height: calc(100vh - 68px);
   right: 0;
   background-color: rgba(0, 0, 0);
   padding: 15px 0;
@@ -107,7 +108,7 @@ header {
 .link-mobile {
   list-style-type: none;
   padding: 8px 15px;
-  width: 150px;
+  width: 200px;
   color: #fff;
   cursor: pointer;
   font-weight: 300;
@@ -119,15 +120,18 @@ header {
   background-color: rgba(255, 255, 255, 0.493);
 }
 
-.buttons button,
-.main button {
+.mobile-menu button {
+  margin-top: 150px;
+}
+
+button {
   background-color: rgb(255, 153, 0);
   border: none;
   padding: 8px 10px;
   width: 100%;
-  margin-top: 30px;
   color: #fff;
   font-size: 14px;
+  cursor: pointer;
   font-weight: 500;
 }
 
@@ -143,5 +147,85 @@ header {
 
   .mobile-menu {
     display: block;
+  }
+}
+
+/* ends pf header */
+
+.main {
+  background-image: linear-gradient(
+    90deg,
+    rgb(182, 180, 180),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255)
+  );
+  padding: 0 50px 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.actions {
+  padding-top: 50px;
+  padding-left: 20px;
+  max-width: 550px;
+  width: 100%;
+}
+
+.main img {
+  width: 500px;
+}
+
+.actions h1 {
+  font-size: 50px;
+  padding-bottom: 30px;
+}
+
+.actions p {
+  font-weight: 200;
+  line-height: 30px;
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+
+.main button {
+  width: auto;
+}
+
+.action-btns {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.outline-button {
+  background-color: transparent;
+  border: 1px solid rgb(255, 153, 0);
+  color: rgb(255, 153, 0);
+}
+
+.outline-button:hover {
+  background-color: rgb(255, 153, 0);
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .main img {
+    max-width: 450px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .actions {
+    padding-top: 50px;
+    max-width: 550px;
+    width: 100%;
   }
 }
