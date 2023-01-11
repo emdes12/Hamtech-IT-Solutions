@@ -101,6 +101,10 @@ header {
   transform: translateX(0);
 }
 
+.mobile-menu.hidd {
+  display: block;
+}
+
 .link-mobile:not(:last-child) {
   border-bottom: 2px solid rgba(255, 255, 255, 0.644);
 }
@@ -146,10 +150,6 @@ button {
   }
 
   .mobile-menu-icon {
-    display: block;
-  }
-
-  .mobile-menu {
     display: block;
   }
 }
