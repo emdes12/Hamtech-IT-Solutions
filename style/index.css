@@ -136,6 +136,10 @@ button {
 }
 
 @media (max-width: 750px) {
+  header {
+    padding: 0 20px;
+  }
+
   nav,
   .top-btn > button.login {
     display: none;
@@ -221,6 +225,7 @@ button {
 @media (max-width: 700px) {
   .main {
     flex-direction: column;
+    padding: 0 20px 30px;
   }
 
   .actions {
