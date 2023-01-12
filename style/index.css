@@ -258,7 +258,8 @@ button {
   position: relative;
 }
 
-.about h1::after {
+.about h1::after, 
+.services h2::after {
   width: 100%;
   height: 3px;
   background-color: rgb(255, 153, 0);
