@@ -256,7 +256,6 @@ button {
   letter-spacing: 5px;
   text-transform: uppercase;
   position: relative;
-  color: #fff;
 }
 
 .about h1::after {
