@@ -234,3 +234,83 @@ button {
     width: 100%;
   }
 }
+
+/* about section */
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 120px 50px 50px;
+}
+
+.about img {
+  max-width: 400px;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.about h1 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.about h1::after {
+  width: 100%;
+  height: 3px;
+  background-color: rgb(255, 153, 0);
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+}
+
+.about p {
+  max-width: 800px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  padding-top: 30px;
+  letter-spacing: 0.5px;
+}
+
+.list-review {
+  background-color: rgb(255, 153, 0);
+  display: grid;
+  place-items: center;
+}
+
+.reviews {
+  padding: 5px 20px;
+  display: flex;
+  max-width: 700px;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.review {
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.review img {
+  width: 50px;
+}
+
+.review h1 {
+  font-size: 20px;
+}
+
+.review p {
+  font-weight: 300;
+  font: 10px;
+}
