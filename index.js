@@ -7,3 +7,16 @@ menuIcon.addEventListener("click", () => {
     mobMenu.classList.toggle("active");
   }, 500);
 });
+
+// collaspe services
+const collaspeHead = document.getElementsByClassName("service-heading");
+
+for (i = 0; i < collaspeHead.length; i++) {
+  collaspeHead[i].addEventListener("click", collaspeFunc);
+}
+
+// fuction to collapse and expand service
+function collaspeFunc() {
+  console.log("clicked");
+  this.parentElement.classList.toggle("show");
+}
