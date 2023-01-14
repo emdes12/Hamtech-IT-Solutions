@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.login-img {
+  content: "";
+  background-image: url("./images/world-most-visited-cities-dubai-united-arab-emirates.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}

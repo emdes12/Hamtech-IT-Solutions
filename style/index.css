@@ -20,7 +20,8 @@ a {
   cursor: pointer;
 }
 
-header img {
+header img,
+.logo img {
   width: 25px;
   padding: 0;
 }
@@ -257,7 +258,8 @@ button {
 
 .about h1,
 .services h2,
-.contact h2 {
+.contact h2,
+.company-details h2 {
   letter-spacing: 5px;
   text-transform: uppercase;
   position: relative;
@@ -268,7 +270,8 @@ button {
 
 .about h1::after,
 .services h2::after,
-.contact h2::after {
+.contact h2::after,
+.company-details h2::after {
   width: 100%;
   height: 3px;
   background-color: rgb(255, 153, 0);
@@ -295,13 +298,12 @@ button {
 }
 
 .reviews {
-  padding: 5px 50px;
+  padding: 5px 20px;
   display: flex;
-  max-width: 700px;
+  max-width: 380px;
   width: 100%;
   align-items: center;
-  justify-content: space-around;
-  gap: 90px;
+  justify-content: space-between;
 }
 
 .review {
@@ -561,4 +563,80 @@ select::placeholder {
   .submit button {
     width: 100%;
   }
+}
+
+/* footer */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.company-foot {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 50px;
+}
+
+.company-profile {
+  max-width: 450px;
+  width: 100%;
+}
+
+.company-profile p {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 24px;
+  padding: 20px 0;
+}
+
+.company-details {
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.company-details h2 {
+  margin: 0;
+  width: 210px;
+}
+
+.add-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.add-container img {
+  width: 20px;
+  height: 20px;
+  object-position: center;
+  object-fit: contain;
+}
+
+.add-container p {
+  padding: 0 5px;
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.foot {
+  padding: 20px 0 0;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid rgb(180, 180, 180);
+  font-size: small;
 }
