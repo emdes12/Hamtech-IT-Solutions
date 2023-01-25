@@ -20,3 +20,5 @@ function collaspeFunc() {
   console.log("clicked");
   this.parentElement.classList.toggle("show");
 }
+
+// countdown animation
