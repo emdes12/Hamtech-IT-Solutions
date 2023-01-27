@@ -310,9 +310,14 @@ button {
 .mission,
 .vision {
   width: 400px;
-  padding: 10px 10px;
+  padding: 20px;
   border: 2px solid rgb(255, 153, 0);
   /* box-shadow: 5px 5px 30px 1px Black; */
+}
+
+.mission p,
+.vision p {
+  text-align: left;
 }
 
 .reviews {
