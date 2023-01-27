@@ -21,4 +21,11 @@ function collaspeFunc() {
   this.parentElement.classList.toggle("show");
 }
 
-// countdown animation
+// to update year
+const footYear = document.querySelector(".foot");
+function updateYear() {
+  let date = new Date();
+  let year = date.getFullYear();
+  footYear.innerHTML = `&copy ${year} Tech-Lot`;
+}
+window.onload(updateYear());

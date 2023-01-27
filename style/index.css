@@ -297,6 +297,24 @@ button {
   place-items: center;
 }
 
+.flex-box-wrap {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+
+.mission,
+.vision {
+  width: 400px;
+  padding: 10px 10px;
+  border: 2px solid rgb(255, 153, 0);
+  /* box-shadow: 5px 5px 30px 1px Black; */
+}
+
 .reviews {
   padding: 5px 20px;
   display: flex;
