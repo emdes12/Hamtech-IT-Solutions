@@ -300,7 +300,7 @@ button {
 .flex-box-wrap {
   display: flex;
   gap: 20px;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   width: 100%;
   padding-top: 20px;
@@ -309,6 +309,8 @@ button {
 
 .mission,
 .vision {
+  min-height: 220px;
+  height: 100%;
   width: 400px;
   padding: 20px;
   border: 2px solid rgb(255, 153, 0);
