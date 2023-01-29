@@ -23,33 +23,63 @@
     />
   </head>
   <body>
-    <div class="login-img">
-      <div class="logo">
-        <img src="/images/plain-white-logo.svg" alt="logo" />
-        <h3>Tech-lot</h3>
-      </div>
+    <div class="logo">
+      <a href="/index.html">TechLot</a>
     </div>
+
+    <section>
+      <img src="/login/images/tech-setting.png" alt="" />
+      <div class="div">
+        <h3>Welcome to our Community</h3>
+        <p>Login/Signup and gain acess to more features</p>
+      </div>
+    </section>
     <main>
-      <h1>Welcome to TECH-LOT</h1>
-      <p>login/signup and gain acess to more features</p>
       <div class="form-container">
-        <div class="form-head">
-          <div class="form-h">Log in</div>
-          <div class="form-h">Sign up</div>
+        <div class="form-head" id="switchBtn">
+          <div class="form-h active" id="login-btn">Log in</div>
+          <div class="form-h" id="reg-btn">Sign up</div>
+          <span class="bottom-line"></span>
         </div>
-        <form action="" class="login-form">
-          <div class="input-container">
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" />
-          </div>
-          <div class="input-container">
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" />
-          </div>
-          <a href="#">Forgotten Password?</a>
-          Don't have <a href="#">Create an account</a>
+        <form action="#" class="login-form">
+          <input
+            type="email"
+            placeholder="Your Email"
+            name="email"
+            id="email"
+          />
+          <input
+            type="password"
+            placeholder="Your Password"
+            name="password"
+            id="password"
+          />
+          <button type="submit">Login</button>
+          <a class="forget-password" href="#">Forgot Password?</a>
+        </form>
+
+        <form action="#" class="reg-form">
+          <input
+            type="email"
+            placeholder="Your Email"
+            name="email"
+            id="regEmail"
+          />
+
+          <input
+            type="password"
+            placeholder="Your Password"
+            name="password"
+            id="regPassword"
+          />
+
+          <input type="password" placeholder="Confirm Password" />
+
+          <button type="submit">Register</button>
         </form>
       </div>
     </main>
+
+    <script src="./auth.js"></script>
   </body>
 </html>

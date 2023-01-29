@@ -17,7 +17,6 @@ for (i = 0; i < collaspeHead.length; i++) {
 
 // fuction to collapse and expand service
 function collaspeFunc() {
-  console.log("clicked");
   this.parentElement.classList.toggle("show");
 }
 
