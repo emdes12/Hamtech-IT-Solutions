@@ -53,7 +53,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 50px 30px;
+  padding: 10px 10px 30px;
 }
 
 .form-container {
@@ -174,21 +174,25 @@ input {
     display: none;
   }
 
-  section {
+  section .div {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 50px 20px 30px;
+    gap: 30px;
   }
 
   h3 {
     font-size: 30px;
     padding: 0;
+    line-height: 36px;
   }
 
   p {
     padding: 0;
     font-size: 14px;
+    line-height: 18px;
   }
 }
