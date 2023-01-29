@@ -53,6 +53,8 @@ let interval = setInterval(function () {
 
   if (num < 1000) {
     projectEl.textContent = num;
+  } else if (num < 1200) {
+    projected.textContent = "1.1K";
   } else {
     clearInterval(interval);
     projectEl.textContent = "1.3K";
