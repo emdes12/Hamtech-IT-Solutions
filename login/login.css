@@ -53,6 +53,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px 50px 30px;
 }
 
 .form-container {
@@ -162,6 +163,9 @@ input {
 }
 
 @media (max-width: 800px) {
+  body {
+    display: block;
+  }
   .logo {
     top: 20px;
   }
@@ -175,7 +179,7 @@ input {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 50px 20px 10px;
+    padding: 50px 20px 30px;
   }
 
   h3 {
