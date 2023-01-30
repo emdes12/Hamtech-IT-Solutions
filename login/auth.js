@@ -8,8 +8,8 @@ const formIndicator = document.querySelector(".bottom-line");
 let switchToReg = () => {
   regForm.style.transform = "translateX(-400px)";
   loginForm.style.transform = "translateX(-400px)";
-  regBtn.classList.toggle("active");
-  loginBtn.classList.toggle("active");
+  regBtn.classList.add("active");
+  loginBtn.classList.remove("active");
   formIndicator.style.transform = "translateX(100px)";
 };
 
@@ -18,8 +18,8 @@ regBtn.addEventListener("click", switchToReg);
 let switchToLogin = () => {
   regForm.style.transform = "translateX(0px)";
   loginForm.style.transform = "translateX(0px)";
-  regBtn.classList.toggle("active");
-  loginBtn.classList.toggle("active");
+  regBtn.classList.remove("active");
+  loginBtn.classList.add("active");
   formIndicator.style.transform = "translateX(0px)";
 };
 
